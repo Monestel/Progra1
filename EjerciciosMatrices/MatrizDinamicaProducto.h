@@ -22,7 +22,7 @@ public:
     double getPrecio();
     int getStock();
 
-    void setStock(int stock);
+    void setStock(int s);
 };
 
 #endif //EJERCICIOSMATRICES_MATRIZDINAMICAPRODUCTO_H

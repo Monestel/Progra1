@@ -25,3 +25,7 @@ double MatrizDinamicaProducto::getPrecio() {
 int MatrizDinamicaProducto::getStock() {
     return stock;
 }
+
+void MatrizDinamicaProducto::setStock(int s) {
+    stock = s;
+}
