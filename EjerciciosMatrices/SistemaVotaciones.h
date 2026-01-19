@@ -1,3 +1,5 @@
+//Ejercicio 27
+
 #ifndef EJERCICIOSMATRICES_SISTEMASVOTACIONES_H
 #define EJERCICIOSMATRICES_SISTEMAVOTACIONES_H
 
@@ -7,6 +9,7 @@ using namespace std;
 class Voto {
 
 private:
+
     string candidato;
     string fecha;
 

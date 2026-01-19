@@ -1,3 +1,5 @@
+//Ejercicio 23
+
 #include "HorarioClase.h"
 
 HorarioClase::HorarioClase() {

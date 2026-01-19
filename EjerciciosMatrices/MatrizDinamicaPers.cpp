@@ -1,4 +1,4 @@
-// Ejercicio 12 - Persona
+// Ejercicio 12
 #include "MatrizDinamicaPers.h"
 
 MatrizDinamicaPers::MatrizDinamicaPers() {

@@ -1,3 +1,5 @@
+//Ejercicio 21
+
 #include "MatrizHotel.h"
 
 Hotel::Hotel(int filas, int columnas) {

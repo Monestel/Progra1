@@ -1,9 +1,12 @@
+//Ejercicio 25
+
 #ifndef SistemaHacienda_H
 #define SistemaHacienda_H
 
 class Declaracion {
 
 private:
+
     int idContribuyente;
     double monto;
     int anio;

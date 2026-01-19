@@ -1,3 +1,5 @@
+//Ejercicio 30
+
 #ifndef EJERCICIOSMATRICES_MATRIZBIBLIO_H
 #define EJERCICIOSMATRICES_MATRIZBIBLIO_H
 
@@ -9,6 +11,7 @@ using namespace std;
 class BibliotecaUni {
 
 private:
+
     int estantes;
     int secciones;
     Libro*** m;

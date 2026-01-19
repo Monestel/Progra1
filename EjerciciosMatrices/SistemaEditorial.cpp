@@ -1,3 +1,5 @@
+//Ejercicio 24
+
 #include "SistemaEditorial.h"
 
 LibroEditorial::LibroEditorial() {

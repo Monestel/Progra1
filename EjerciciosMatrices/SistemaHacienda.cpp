@@ -1,3 +1,5 @@
+//Ejercicio 25
+
 #include "SistemaHacienda.h"
 
 Declaracion::Declaracion(int id, double monto, int anio) {

@@ -1,3 +1,5 @@
+//Ejercicio 15
+
 #ifndef MATRIZDINAMICABIBLIOTECA_H
 #define MATRIZDINAMICABIBLIOTECA_H
 
@@ -7,7 +9,7 @@ class Biblioteca {
 
 private:
 
-    Libro** m;
+    MatrizDinamicaLibro** m;
     int filas;
     int columnas;
 
@@ -18,7 +20,7 @@ public:
     void agregarLibro(int fila, int columna, string titulo, string autor, int anio);
     int buscarPorAutor(string autor);
     int librosAntiguos(int anioLimite);
-    Libro libroMasReciente();
+    MatrizDinamicaLibro libroMasReciente();
 };
 
 #endif //EJERCICIOSMATRICES_MATRIZDINAMICABIBLIOTECA_H

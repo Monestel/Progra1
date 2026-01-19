@@ -1,3 +1,5 @@
+//Ejercicio 28
+
 #include "MatrizAlmacen.h"
 
 Almacen::Almacen(int e, int c) {

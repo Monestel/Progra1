@@ -1,3 +1,5 @@
+//Ejercicio 29
+
 #ifndef EJERCICIOSMATRICES_SISTEMACALIFICACIONESESC_H
 #define EJERCICIOSMATRICES_SISTEMACALIFICACIONESESC_H
 
@@ -7,6 +9,7 @@ using namespace std;
 class Calificacion {
 
 private:
+
     string estudiante;
     string materia;
     double nota;

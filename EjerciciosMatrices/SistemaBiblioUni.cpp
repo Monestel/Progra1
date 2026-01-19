@@ -1,3 +1,5 @@
+//Ejercicio 30
+
 #include "SistemaBiblioUni.h"
 
 Libro::Libro(string i, string t, string a, int an, bool d) {

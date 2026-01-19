@@ -1,3 +1,5 @@
+//Ejercicio 27
+
 #include "MatrizUrna.h"
 
 Urna::Urna(int me, int ca) {

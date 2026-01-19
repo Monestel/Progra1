@@ -1,3 +1,5 @@
+//Ejercicio 25
+
 #include "MatrizHacienda.h"
 
 Hacienda::Hacienda(int contribuyentes, int anios) {

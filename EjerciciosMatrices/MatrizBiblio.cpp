@@ -1,3 +1,5 @@
+//Ejercicio 30
+
 #include "MatrizBiblio.h"
 
 BibliotecaUni::BibliotecaUni(int e, int s) {

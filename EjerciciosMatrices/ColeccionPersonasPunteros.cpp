@@ -1,3 +1,5 @@
+//Ejercicio 17
+
 #include "ColeccionPersonasPunteros.h"
 
 ColeccionPersonasPunteros::ColeccionPersonasPunteros(int filas, int columnas) {

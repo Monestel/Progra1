@@ -1,3 +1,5 @@
+//Ejercicio 24
+
 #include "MatrizEditorial.h"
 
 Editorial::Editorial(int sucursales, int anios) {

@@ -1,3 +1,5 @@
+//Ejercicio 22
+
 #include "EquipoFut.h"
 
 Equipo::Equipo(int filas, int columnas) {

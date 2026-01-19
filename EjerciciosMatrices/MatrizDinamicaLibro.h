@@ -1,3 +1,5 @@
+//Ejercicio 15
+
 #ifndef MATRIZDINAMICALIBRO_H
 #define MATRIZDINAMICALIBRO_H
 
@@ -5,7 +7,9 @@
 using namespace std;
 
 class MatrizDinamicaLibro {
+
 private:
+
     string titulo;
     string autor;
     int anio;

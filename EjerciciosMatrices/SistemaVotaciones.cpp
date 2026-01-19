@@ -1,3 +1,5 @@
+//Ejercicio 27
+
 #include "SistemaVotaciones.h"
 
 Voto::Voto(string c, string f) {

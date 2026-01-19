@@ -1,3 +1,5 @@
+//Ejercicio 28
+
 #ifndef EJERCICIOSMATRICES_MATRIZALMACEN_H
 #define EJERCICIOSMATRICES_MATRIZALMACEN_H
 
@@ -9,6 +11,7 @@ using namespace std;
 class Almacen {
 
 private:
+
     int estantes;
     int categorias;
     Articulo*** m;

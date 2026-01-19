@@ -1,12 +1,15 @@
+//Ejercicio 15
+
 #include "MatrizDinamicaBiblioteca.h"
+#include "MatrizDinamicaLibro.h"
 
 Biblioteca::Biblioteca(int filas, int columnas) {
     this->filas = filas;
     this->columnas = columnas;
 
-    m = new Libro*[filas];
+    m = new MatrizDinamicaLibro *[filas];
     for (int i = 0; i < filas; i++) {
-        m[i] = new Libro[columnas];
+        m[i] = new MatrizDinamicaLibro[columnas];
     }
 }
 
@@ -19,7 +22,7 @@ Biblioteca::~Biblioteca() {
 
 void Biblioteca::agregarLibro(int fila, int columna, string titulo, string autor, int anio) {
     if (fila >= 0 && fila < filas && columna >= 0 && columna < columnas) {
-        m[fila][columna] = Libro(titulo, autor, anio);
+        m[fila][columna] = MatrizDinamicaLibro(titulo, autor, anio);
     }
 }
 
@@ -51,8 +54,8 @@ int Biblioteca::librosAntiguos(int anioLimite) {
     return contador;
 }
 
-Libro Biblioteca::libroMasReciente() {
-    Libro reciente = m[0][0];
+MatrizDinamicaLibro Biblioteca::libroMasReciente() {
+    MatrizDinamicaLibro reciente = m[0][0];
 
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {

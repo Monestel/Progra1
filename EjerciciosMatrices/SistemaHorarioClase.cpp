@@ -1,3 +1,5 @@
+//Ejercicio 23
+
 #include "SistemaHorarioClase.h"
 
 Clase::Clase() {

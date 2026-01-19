@@ -1,9 +1,12 @@
+//Ejercicio 13
+
 #ifndef EJERCICIOSMATRICES_MATRIZINVENTARIODINAMICO_H
 #define EJERCICIOSMATRICES_MATRIZINVENTARIODINAMICO_H
 
 #include <iostream>
 #include <sstream>
 #include <string>
+
  class MatrizDinamicaProducto;
 using namespace std;
 

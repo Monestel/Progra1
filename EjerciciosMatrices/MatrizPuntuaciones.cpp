@@ -1,4 +1,4 @@
-//Ejercicio 4
+//Ejercicio 5
 #include "MatrizPuntuaciones.h"
 
 void MatrizPuntuaciones::limpiar() {

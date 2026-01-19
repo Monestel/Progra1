@@ -1,3 +1,5 @@
+//Ejercicio 23
+
 #ifndef EJERCICIOSMATRICES_HORARIOCLASE_H
 #define EJERCICIOSMATRICES_HORARIOCLASE_H
 
@@ -8,6 +10,7 @@ using namespace std;
 class HorarioClase {
 
 private:
+
     static const int DIAS = 7;
     static const int HORAS = 12;
     Clase ***m;

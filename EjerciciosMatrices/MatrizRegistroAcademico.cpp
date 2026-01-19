@@ -1,3 +1,5 @@
+//Ejercicio 29
+
 #include "MatrizRegistroAcademico.h"
 
 RegistroAcademico::RegistroAcademico(int e, int ma) {

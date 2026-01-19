@@ -1,3 +1,5 @@
+//Ejercicio 28
+
 #ifndef EJERCICIOSMATRICES_SISTEMAALMACEN_H
 #define EJERCICIOSMATRICES_SISTEMAALMACEN_H
 
@@ -7,6 +9,7 @@ using namespace std;
 class Articulo {
 
 private:
+
     string codigo;
     string nombre;
     string categoria;

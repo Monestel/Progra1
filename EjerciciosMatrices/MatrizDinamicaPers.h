@@ -1,4 +1,4 @@
-// Ejercicio 12 - Persona
+// Ejercicio 12
 
 #ifndef EJERCICIOSMATRICES_PERSONA_H
 #define EJERCICIOSMATRICES_PERSONA_H

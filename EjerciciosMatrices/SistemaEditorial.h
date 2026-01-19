@@ -1,3 +1,5 @@
+//Ejercicio 24
+
 #ifndef EJERCICIOSMATRICES_SISTEMAEDITORIAL_H
 #define EJERCICIOSMATRICES_SISTEMAEDITORIAL_H
 
@@ -7,6 +9,7 @@ using namespace std;
 class LibroEditorial {
 
 private:
+
     string titulo;
     string autor;
     int unidadesVendidas;

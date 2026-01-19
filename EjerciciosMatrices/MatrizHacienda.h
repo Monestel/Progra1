@@ -1,3 +1,5 @@
+//Ejercicio 25
+
 #ifndef MATRIZHACIENDA_H
 #define MATRIZHACIENDA_H
 
@@ -6,6 +8,7 @@
 class Hacienda {
 
 private:
+
     int contribuyentes;
     int anios;
     Declaracion ***m;

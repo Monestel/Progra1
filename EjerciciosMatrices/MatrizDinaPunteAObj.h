@@ -1,3 +1,5 @@
+//Ejercicio 17
+
 #ifndef MATRIZPUNTEAOBJ_H
 #define MATRIZPUNTEAOBJ_H
 
@@ -6,7 +8,9 @@
 using namespace std;
 
 class MatrizPunterosObj {
+
 private:
+
     int*** m;
     int filas;
     int columnas;

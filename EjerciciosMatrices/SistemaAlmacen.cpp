@@ -1,3 +1,5 @@
+//Ejercicio 28
+
 #include "SistemaAlmacen.h"
 
 Articulo::Articulo(string c, string n, string cat, int cant, double p) {

@@ -1,3 +1,5 @@
+//Ejercicio 30
+
 #ifndef EJERCICIOSMATRICES_SISTEMABIBLIOUNI_H
 #define EJERCICIOSMATRICES_SISTEMABIBLIOUNI_H
 
@@ -7,6 +9,7 @@ using namespace std;
 class Libro {
 
 private:
+
     string isbn;
     string titulo;
     string autor;

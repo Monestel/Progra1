@@ -378,8 +378,8 @@ int main() {
      cp.agregarPersona(1, 1, "Pedro", 28);
 
      MatrizDinamicaPers joven = cp.personaMasJoven();
-     cout << "Persona más joven: " << joven.getNombre()
-          << " (" << joven.getEdad() << " años)" << endl;
+     cout << "Persona mas joven: " << joven.getNombre()
+          << " (" << joven.getEdad() << " anios)" << endl;
 
      cout << "Promedio de edades: " << cp.promedioEdades() << endl;
 
@@ -401,9 +401,9 @@ int main() {
      cout << "=== PRUEBA 2: Valor total del inventario ===\n";
      cout << "Valor total: " << inventario.valorTotalInventario() << endl;
 
-     cout << "=== PRUEBA 3: Producto más caro ===\n";
+     cout << "=== PRUEBA 3: Producto mas caro ===\n";
      auto caro = inventario.productoMasCaro();
-     cout << "Producto más caro: " << caro.getNombre()
+     cout << "Producto mas caro: " << caro.getNombre()
           << " | Precio: " << caro.getPrecio() << endl;
 
      cout << "=== PRUEBA 4: Productos con stock bajo ===\n";
