@@ -4,6 +4,8 @@
 #include "MatrizEnteros.h"
 #include "MatrizOperaciones.h"
 #include "MatrizPuntuaciones.h"
+#include "Temperaturas.h"
+
 
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 int main() {
@@ -162,6 +164,45 @@ int main() {
      cout << "=== PRUEBA 1: Matriz inicial ===\n";
      cout << puntuacion.toString() << endl;
      cout << "Hola" <<endl;
+
+
+
+     Temperaturas temp;
+     cout << "Ejercicio 6: " << endl;
+
+     cout << "=== PRUEBA 1: Matriz inicial ===\n";
+     cout << temp.toString() << endl;
+
+     cout << "=== PRUEBA 2: Registrar temperaturas ===\n";
+     temp.registrarTemperatura(0, 0, 20);
+     temp.registrarTemperatura(0, 1, 22);
+     temp.registrarTemperatura(0, 2, 19);
+     temp.registrarTemperatura(0, 3, 21);
+
+     temp.registrarTemperatura(1, 0, 25);
+     temp.registrarTemperatura(1, 1, 24);
+     temp.registrarTemperatura(1, 2, 26);
+     temp.registrarTemperatura(1, 3, 23);
+
+     temp.registrarTemperatura(2, 0, 18);
+     temp.registrarTemperatura(2, 1, 17);
+     temp.registrarTemperatura(2, 2, 16);
+     temp.registrarTemperatura(2, 3, 19);
+
+     cout << temp.toString() << endl;
+
+     cout << "=== PRUEBA 3: Promedio por ciudad ===\n";
+     cout << "Ciudad 0: " << temp.temperaturaPromedioCiudad(0) << endl;
+     cout << "Ciudad 1: " << temp.temperaturaPromedioCiudad(1) << endl;
+     cout << "Ciudad 2: " << temp.temperaturaPromedioCiudad(2) << endl;
+     cout << "Ciudad 3: " << temp.temperaturaPromedioCiudad(3) << endl;
+
+     cout << "=== PRUEBA 4: Dia mas caliente ===\n";
+     cout << "Dia: " << temp.diaMasCaliente() << endl;
+
+     cout << "=== PRUEBA 5: Ciudad mas fria ===\n";
+     cout << "Ciudad: " << temp.ciudadMasFria() << endl;
+
 
 
     // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.

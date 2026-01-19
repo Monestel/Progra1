@@ -1,13 +1,36 @@
-//
-// Created by david on 1/18/2026.
-//
+// Ejercicio 6
 
-#ifndef EJERCICIOSMATRICES_MATRIZTEMPERATURAS_H
-#define EJERCICIOSMATRICES_MATRIZTEMPERATURAS_H
+#ifndef EJERCICIOSMATRICES_TEMPERATURAS_H
+#define EJERCICIOSMATRICES_TEMPERATURAS_H
 
+#include <iostream>
+#include <sstream>
+#include <string>
+using namespace std;
 
-class MatrizTemperaturas {
+class Temperaturas {
+
+private:
+
+    static const int DIAS = 7;
+    static const int CIUDADES = 4;
+    double m[DIAS][CIUDADES];
+
+public:
+    /*
+     Constructor que inicializa todas las temperaturas en 0
+     registrarTemperatura(int dia, int ciudad, double temp)
+     temperaturaPromedioCiudad(int ciudad)
+     diaMasCaliente()
+     ciudadMasFria()
+    */
+
+    Temperaturas();
+    void registrarTemperatura(int dia, int ciudad, double temp);
+    double temperaturaPromedioCiudad(int ciudad);
+    int diaMasCaliente();
+    int ciudadMasFria();
+    string toString();
 };
 
-
-#endif //EJERCICIOSMATRICES_MATRIZTEMPERATURAS_H
+#endif //EJERCICIOSMATRICES_TEMPERATURAS_H
