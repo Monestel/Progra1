@@ -139,6 +139,7 @@ int main() {
     cout << "Promedio fila 0: " << opera.promedioFila(0) <<endl;
     cout << "Promedio fila 1: " << opera.promedioFila(1) <<endl;
     opera.limpiar();
+     cout << endl;
 
 
 
@@ -190,7 +191,51 @@ int main() {
 
      cout << "=== PRUEBA 1: Matriz inicial ===\n";
      cout << puntuacion.toString() << endl;
-     cout << "Hola" <<endl;
+     cout << "=== PRUEBA 2: Agregar puntuaciones ===" << endl;
+
+     puntuacion.agregarPuntuacion(0, 0, 85);
+     puntuacion.agregarPuntuacion(0, 1, 90);
+     puntuacion.agregarPuntuacion(0, 2, 88);
+
+     puntuacion.agregarPuntuacion(1, 0, 70);
+     puntuacion.agregarPuntuacion(1, 1, 75);
+     puntuacion.agregarPuntuacion(1, 2, 80);
+
+     puntuacion.agregarPuntuacion(2, 0, 95);
+     puntuacion.agregarPuntuacion(2, 1, 92);
+     puntuacion.agregarPuntuacion(2, 2, 94);
+
+     puntuacion.agregarPuntuacion(3, 0, 60);
+     puntuacion.agregarPuntuacion(3, 1, 65);
+     puntuacion.agregarPuntuacion(3, 2, 70);
+
+     puntuacion.agregarPuntuacion(4, 0, 88);
+     puntuacion.agregarPuntuacion(4, 1, 85);
+     puntuacion.agregarPuntuacion(4, 2, 90);
+
+     cout << puntuacion.toString() << endl;
+
+     cout << "=== PRUEBA 3: Promedio por estudiante ===" << endl;
+     for (int i = 0; i < 5; i++) {
+          cout << "Estudiante " << i
+               << " promedio: "
+               << puntuacion.promedioEstudiante(i) << endl;
+     }
+     cout << endl;
+
+     cout << "=== PRUEBA 4: Promedio por examen ===" << endl;
+     for (int e = 0; e < 3; e++) {
+          cout << "Examen " << e
+               << " promedio: "
+               << puntuacion.promedioExamen(e) << endl;
+     }
+     cout << endl;
+
+     cout << "=== PRUEBA 5: Mejor estudiante ===" << endl;
+     int mejoor = puntuacion.mejoorEstudiante();
+     cout << "El mejor estudiante es el indice: " << mejoor << endl;
+     cout << "Promedio: " << puntuacion.promedioEstudiante(mejoor) << endl;
+     cout << endl;
 
 
 
@@ -229,6 +274,7 @@ int main() {
 
      cout << "=== PRUEBA 5: Ciudad mas fria ===\n";
      cout << "Ciudad: " << temp.ciudadMasFria() << endl;
+     cout << endl;
 
 
 
@@ -260,6 +306,7 @@ int main() {
      cout << "=== PRUEBA 4: Transponer ===\n";
      simet.transponer();
      cout << simet.toString() << endl;
+     cout << endl;
 
 
 
@@ -293,6 +340,7 @@ int main() {
 
      cout << "=== PRUEBA 5: Almacen con mas productos ===\n";
      cout << "Almacen: " << invent.almacenConMasProductos() << endl;
+     cout << endl;
 
 
 
@@ -326,6 +374,7 @@ int main() {
      cout << "Dia 0 Hora 0: "
           << (horario.estaLibre(0, 0) ? "Libre" : "Ocupado") << endl;
 
+     cout << endl;
 
 
 
@@ -352,6 +401,7 @@ int main() {
 
      cout << "=== PRUEBA 5: Mejor fila ===\n";
      cout << "Fila con mas asientos libres: " << cine.mejorFila() << endl;
+     cout << endl;
 
 
 
@@ -365,6 +415,7 @@ int main() {
 
      cout << mDent.toString() << endl;
      cout << "Valor en (1,2): " << mDent.obtener(1,2) << endl;
+     cout << endl;
 
 
 
@@ -382,7 +433,7 @@ int main() {
           << " (" << joven.getEdad() << " anios)" << endl;
 
      cout << "Promedio de edades: " << cp.promedioEdades() << endl;
-
+     cout << endl;
 
 
 
@@ -410,6 +461,7 @@ int main() {
      cout << "Stock menor a 5: "
           << inventario.productosConStockBajo(5)
           << " (esperado 2)" << endl;
+     cout << endl;
 
 
 
@@ -435,6 +487,7 @@ int main() {
 
      cout << "Estudiantes aprobados (>=6): "
           << grupo.estudiantesAprobados(6) << endl;
+     cout << endl;
 
 
 
@@ -460,6 +513,7 @@ int main() {
      cout << "Libro mas reciente: "
           << reciente.getTitulo()
           << " (" << reciente.getAnio() << ")" << endl;
+     cout << endl;
 
 
 
@@ -481,6 +535,7 @@ int main() {
      cout << "Valor (0,0): " << mPO.obtenerValor(0,0) << endl;
      cout << "Valor (1,2): " << mPO.obtenerValor(1,2) << endl;
      cout << "Valor (0,2): " << mPO.obtenerValor(0,2) << endl;
+     cout << endl;
 
 
 
@@ -501,6 +556,7 @@ int main() {
      cpp.eliminarPersona(0, 1);
      cout << "Total personas luego de eliminar: "
           << cpp.contarPersonas() << endl;
+     cout << endl;
 
 
 
@@ -526,8 +582,11 @@ int main() {
           << tienda.productosAgotados() << endl;
 
      tienda.eliminarProducto(1, 0);
+     cout << endl;
 
 
+
+     cout << "Ejercicio 19:" << endl;
 
      Aula aula(2, 2);
 
@@ -543,9 +602,11 @@ int main() {
      cout << "Mejor estudiante: " << mejor.getNombre() << endl;
 
      aula.reemplazarEstudiante(0, 1, "Pedro", n1);
+     cout << endl;
 
 
 
+     cout << "Ejercicio 20:" << endl;
      Libreria lib(2, 2);
 
      lib.agregarLibro(0, 0, "1984", "Orwell", 1949);
@@ -562,6 +623,7 @@ int main() {
      cout << "Libro mas antiguo: "
           << viejo.getTitulo()
           << " (" << viejo.getAnio() << ")" << endl;
+     cout << endl;
 
 
 
@@ -584,6 +646,7 @@ int main() {
           << cara.getNumero() << " "
           << cara.getTipo() << " "
           << cara.getPrecio() << endl;
+     cout << endl;
 
 
 
@@ -603,6 +666,7 @@ int main() {
 
      cout << "Existe jugador #10? "
           << equipo.buscarJugador(10) << endl;
+     cout << endl;
 
 
 
@@ -622,6 +686,7 @@ int main() {
 
      cout << "Conflicto dia 1 hora 2: "
           << horarioSemanal.hayConflicto(1, 2) << endl;
+     cout << endl;
 
 
 
@@ -648,6 +713,7 @@ int main() {
 
      cout << "Ganancias sucursal 1: "
           << editorial.gananciasSucursal(1) << endl;
+     cout << endl;
 
 
 
@@ -672,6 +738,7 @@ int main() {
 
      cout << "Promedio anio 0: " << h.promedioAnio(0) << endl;
      cout << "Promedio anio 3: " << h.promedioAnio(3) << endl;
+     cout << endl;
 
 
 
@@ -691,6 +758,7 @@ int main() {
 
      cout << "Suma submatriz (0,0): " << mdm.sumarSubmatriz(0,0) << endl;
      cout << "Suma submatriz (1,1): " << mdm.sumarSubmatriz(1,1) << endl;
+     cout << endl;
 
 
 
@@ -711,6 +779,7 @@ int main() {
      cout << "Votos mesa 0: " << urna.votosPorMesa(0) << endl;
      cout << "Total votos: " << urna.totalVotos() << endl;
      cout << "Candidato ganador: " << urna.candidatoGanador() << endl;
+     cout << endl;
 
 
 
@@ -731,6 +800,7 @@ int main() {
 
      Articulo Caro = almacen.articuloMasCaro();
      cout << "Articulo mas caro: " << Caro.getNombre() << " " << Caro.getPrecio() << endl;
+     cout << endl;
 
 
 
@@ -752,6 +822,7 @@ int main() {
      cout << "Mejor estudiante: " << reg.mejorEstudiante() << endl;
      cout << "Estudiantes aprobados >=7: " << reg.estudiantesAprobados(7) << endl;
      cout << "Materia mas dificil: " << reg.materiaMasDificil() << endl;
+     cout << endl;
 
 
 
@@ -773,6 +844,8 @@ int main() {
      cout << "Libros de Perez: " << bUni.librosPorAutor("Perez") << endl;
      cout << "Libros antiguos: " << bUni.librosAntiguos(2000) << endl;
      cout << "Valor total: " << bUni.valorTotalBiblioteca() << endl;
+
+     cout << endl;
 
      cout << "Fin de los ejercicios, 30/30" << endl;
 

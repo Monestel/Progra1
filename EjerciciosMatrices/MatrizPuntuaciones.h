@@ -30,7 +30,7 @@ mejorEstudiante(): retorna el índice del estudiante con mejor promedio
     void agregarPuntuacion(int estudiante, int examen, double puntuacion);
     double promedioEstudiante(int estudiante);
     double promedioExamen(int examen);
-    int mejorEstudiante();
+    int mejoorEstudiante();
 };
 
 

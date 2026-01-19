@@ -62,19 +62,19 @@ double MatrizPuntuaciones::promedioExamen(int examen) {
     return suma / ESTUDIANTES;
 }
 
-int MatrizPuntuaciones::mejorEstudiante() {
-    int mejor = 0;
+int MatrizPuntuaciones::mejoorEstudiante() {
+    int mejoor = 0;
     double mejorPromedio = promedioEstudiante(0);
 
     for (int i = 1; i < ESTUDIANTES; i++) {
         double prom = promedioEstudiante(i);
         if (prom > mejorPromedio) {
             mejorPromedio = prom;
-            mejor = i;
+            mejoor = i;
         }
     }
 
-    return mejor;
+    return mejoor;
 }
 
 
