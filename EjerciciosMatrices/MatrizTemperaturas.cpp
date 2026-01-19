@@ -1,7 +1,7 @@
 // Ejercicio 6
-#include "Temperaturas.h"
+#include "MatrizTemperaturas.h"
 
-Temperaturas::Temperaturas() {
+MatrizTemperaturas::MatrizTemperaturas() {
     for (int i = 0; i < DIAS; i++) {
         for (int j = 0; j < CIUDADES; j++) {
             m[i][j] = 0.0;
@@ -9,13 +9,13 @@ Temperaturas::Temperaturas() {
     }
 }
 
-void Temperaturas::registrarTemperatura(int dia, int ciudad, double temp) {
+void MatrizTemperaturas::registrarTemperatura(int dia, int ciudad, double temp) {
     if (dia >= 0 && dia < DIAS && ciudad >= 0 && ciudad < CIUDADES) {
         m[dia][ciudad] = temp;
     }
 }
 
-double Temperaturas::temperaturaPromedioCiudad(int ciudad) {
+double MatrizTemperaturas::temperaturaPromedioCiudad(int ciudad) {
     if (ciudad < 0 || ciudad >= CIUDADES) {
         return 0;
     }
@@ -28,7 +28,7 @@ double Temperaturas::temperaturaPromedioCiudad(int ciudad) {
     return suma / DIAS;
 }
 
-int Temperaturas::diaMasCaliente() {
+int MatrizTemperaturas::diaMasCaliente() {
     int diaMax = 0;
     double maxPromedio = -1e9;
 
@@ -48,7 +48,7 @@ int Temperaturas::diaMasCaliente() {
     return diaMax;
 }
 
-int Temperaturas::ciudadMasFria() {
+int MatrizTemperaturas::ciudadMasFria() {
     int ciudadMin = 0;
     double minPromedio = 1e9;
 
@@ -68,7 +68,7 @@ int Temperaturas::ciudadMasFria() {
     return ciudadMin;
 }
 
-string Temperaturas::toString() {
+string MatrizTemperaturas::toString() {
     stringstream ss;
     for (int i = 0; i < DIAS; i++) {
         for (int j = 0; j < CIUDADES; j++) {

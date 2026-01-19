@@ -8,7 +8,7 @@
 #include <string>
 using namespace std;
 
-class Temperaturas {
+class MatrizTemperaturas {
 
 private:
 
@@ -25,7 +25,7 @@ public:
      ciudadMasFria()
     */
 
-    Temperaturas();
+    MatrizTemperaturas();
     void registrarTemperatura(int dia, int ciudad, double temp);
     double temperaturaPromedioCiudad(int ciudad);
     int diaMasCaliente();
